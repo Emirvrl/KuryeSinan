@@ -371,33 +371,40 @@ footer {
     .contact-options {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Kartlar arasındaki mesafeyi azalt */
+        gap: 10px;
+        width: 100%;
     }
     
     .contact-option {
         width: 100%;
+        max-width: 100%;
+        margin: 0 0 10px 0;
+        box-sizing: border-box;
     }
-
+    
     .contact-option a {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
         display: block;
         text-align: center;
+        margin: 0 auto;
     }
     
     .whatsapp-btn, .pulse-button {
-        width: 100%;
+        width: 90%;
         padding: 10px 15px;
         font-size: 16px;
         margin: 0 auto;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        box-sizing: border-box;
+        display: inline-block;
     }
 
     .contact-card {
-        width: 90%;
+        width: 100%;
         padding: 15px;
         margin: 0 auto;
         box-sizing: border-box;
